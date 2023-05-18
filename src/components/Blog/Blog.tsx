@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Link, Navigate, Route, Routes } from 'react-router-dom';
 import { BlogList } from './BlogList';
 import { Post } from '../Post';
 import { useEffect } from 'react';
@@ -17,9 +17,7 @@ export const Blog = observer(() => {
       <header id='masthead' className='site-header'>
         <div className='site-branding'>
           <h1 className='site-title'>
-            <a href='index.html' rel='home'>
-              Qtim
-            </a>
+            <Link to={'/'}>Qtim</Link>
           </h1>
           <h2 className='site-description'>
             Разрабатываем цифровые продукты любой сложности
